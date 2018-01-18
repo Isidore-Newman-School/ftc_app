@@ -70,9 +70,7 @@ public class MainOp extends OpMode {
         boolean bumpers_in_use =
             gamepad1.left_bumper || gamepad1.right_bumper;
 
-        boolean bumpers_cancel =
-            bumpers_in_use &&
-            gamepad1.left_bumper == gamepad1.right_bumper;
+        boolean bumpers_cancel = gamepad1.left_bumper == gamepad1.right_bumper;
 
         if(bumpers_in_use){
             switch (BumperMovement){
